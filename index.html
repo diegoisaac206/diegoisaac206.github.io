@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a929a071325d479797d54ae1b9442dd4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a929a071325d479797d54ae1b9442dd4" ></div>
+        
+</body>
+<script>    
+    
+            var map_a929a071325d479797d54ae1b9442dd4 = L.map(
+                "map_a929a071325d479797d54ae1b9442dd4",
+                {
+                    center: [-2.9005954757079273, -79.01016100881519],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3c2c515f1a8c4333bd2c8bf14b45a031 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a929a071325d479797d54ae1b9442dd4);
+        
+    
+            var marker_cluster_e7bdec3419bd4945b5e79de3fa067088 = L.markerClusterGroup(
+                {}
+            );
+            map_a929a071325d479797d54ae1b9442dd4.addLayer(marker_cluster_e7bdec3419bd4945b5e79de3fa067088);
+        
+    
+            var circle_marker_de10d9e7b1054d46b8db7acbeaa8539c = L.circleMarker(
+                [-2.9005954757079273, -79.01016100881519],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7bdec3419bd4945b5e79de3fa067088);
+        
+    
+        var popup_c4c8f22db7f147338f7de195ac12dcb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36ebf4a89a0540f6be9ecddeb868b2f9 = $(`<div id="html_36ebf4a89a0540f6be9ecddeb868b2f9" style="width: 100.0%; height: 100.0%;"><stong>Allianz Arena</stong></div>`)[0];
+            popup_c4c8f22db7f147338f7de195ac12dcb5.setContent(html_36ebf4a89a0540f6be9ecddeb868b2f9);
+        
+
+        circle_marker_de10d9e7b1054d46b8db7acbeaa8539c.bindPopup(popup_c4c8f22db7f147338f7de195ac12dcb5)
+        ;
+
+        
+    
+    
+            circle_marker_de10d9e7b1054d46b8db7acbeaa8539c.bindTooltip(
+                `<div>
+                     Universidad de Cuenca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ccbca53bf64e4780baf432e2e27597c1 = L.circleMarker(
+                [-2.90046330959323, -79.0113453468234],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7bdec3419bd4945b5e79de3fa067088);
+        
+    
+        var popup_c1966e8593c04e0cb3f58c8aa6a2f6b0 = L.popup({"maxWidth": 700});
+
+        
+            var html_9f11e7d731b24d46a0220122b9ad78a2 = $(`<div id="html_9f11e7d731b24d46a0220122b9ad78a2" style="width: 100.0%; height: 100.0%;"><p style="text-align: center;"><span style="font-family: Didot, serif; font-size: 21px;">Hola</span></p>     <p style="text-align: center;"><iframe src="https://scontent.fuio13-1.fna.fbcdn.net/v/t1.6435-9/36846655_646067285785970_4797000834908946432_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=e3f864&_nc_ohc=5NSQ-MbkxA8AX_mNRze&_nc_ht=scontent.fuio13-1.fna&oh=9213d59245cbfce67f0d52f6fe638d47&oe=61B38BE1" embed width="240" height="290" frameborder="0" scrolling="no" allowtransparency="true"></iframe>     </div>`)[0];
+            popup_c1966e8593c04e0cb3f58c8aa6a2f6b0.setContent(html_9f11e7d731b24d46a0220122b9ad78a2);
+        
+
+        circle_marker_ccbca53bf64e4780baf432e2e27597c1.bindPopup(popup_c1966e8593c04e0cb3f58c8aa6a2f6b0)
+        ;
+
+        
+    
+    
+            circle_marker_ccbca53bf64e4780baf432e2e27597c1.bindTooltip(
+                `<div>
+                     Universidad de Cuenca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2f548b6c34fb4a5b8723eada51a65014 = L.circleMarker(
+                [-2.90052972998993, -79.0098627697478],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7bdec3419bd4945b5e79de3fa067088);
+        
+    
+        var popup_308badfa77af4d4da2c46eb40ca70d90 = L.popup({"maxWidth": 700});
+
+        
+            var html_9f11e7d731b24d46a0220122b9ad78a2 = $(`<div id="html_9f11e7d731b24d46a0220122b9ad78a2" style="width: 100.0%; height: 100.0%;"><p style="text-align: center;"><span style="font-family: Didot, serif; font-size: 21px;">Hola</span></p>     <p style="text-align: center;"><iframe src="https://scontent.fuio13-1.fna.fbcdn.net/v/t1.6435-9/36846655_646067285785970_4797000834908946432_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=e3f864&_nc_ohc=5NSQ-MbkxA8AX_mNRze&_nc_ht=scontent.fuio13-1.fna&oh=9213d59245cbfce67f0d52f6fe638d47&oe=61B38BE1" embed width="240" height="290" frameborder="0" scrolling="no" allowtransparency="true"></iframe>     </div>`)[0];
+            popup_308badfa77af4d4da2c46eb40ca70d90.setContent(html_9f11e7d731b24d46a0220122b9ad78a2);
+        
+
+        circle_marker_2f548b6c34fb4a5b8723eada51a65014.bindPopup(popup_308badfa77af4d4da2c46eb40ca70d90)
+        ;
+
+        
+    
+    
+            circle_marker_2f548b6c34fb4a5b8723eada51a65014.bindTooltip(
+                `<div>
+                     Universidad de Cuenca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5cf7066f15cb4e02b888344b7fcd99f7 = L.circleMarker(
+                [-2.90111368022395, -79.0097217679389],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7bdec3419bd4945b5e79de3fa067088);
+        
+    
+        var popup_949b8009fce147b299beb2ad18203dd5 = L.popup({"maxWidth": 700});
+
+        
+            var html_9f11e7d731b24d46a0220122b9ad78a2 = $(`<div id="html_9f11e7d731b24d46a0220122b9ad78a2" style="width: 100.0%; height: 100.0%;"><p style="text-align: center;"><span style="font-family: Didot, serif; font-size: 21px;">Hola</span></p>     <p style="text-align: center;"><iframe src="https://scontent.fuio13-1.fna.fbcdn.net/v/t1.6435-9/36846655_646067285785970_4797000834908946432_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=e3f864&_nc_ohc=5NSQ-MbkxA8AX_mNRze&_nc_ht=scontent.fuio13-1.fna&oh=9213d59245cbfce67f0d52f6fe638d47&oe=61B38BE1" embed width="240" height="290" frameborder="0" scrolling="no" allowtransparency="true"></iframe>     </div>`)[0];
+            popup_949b8009fce147b299beb2ad18203dd5.setContent(html_9f11e7d731b24d46a0220122b9ad78a2);
+        
+
+        circle_marker_5cf7066f15cb4e02b888344b7fcd99f7.bindPopup(popup_949b8009fce147b299beb2ad18203dd5)
+        ;
+
+        
+    
+    
+            circle_marker_5cf7066f15cb4e02b888344b7fcd99f7.bindTooltip(
+                `<div>
+                     Universidad de Cuenca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc3ceaa78d864ef2b59d3fa9299981ca = L.circleMarker(
+                [-2.90111368022395, -79.0097217679389],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e7bdec3419bd4945b5e79de3fa067088);
+        
+    
+        var popup_06413c6c724d4cd09fbfa9bb5b11b7cc = L.popup({"maxWidth": 700});
+
+        
+            var html_9f11e7d731b24d46a0220122b9ad78a2 = $(`<div id="html_9f11e7d731b24d46a0220122b9ad78a2" style="width: 100.0%; height: 100.0%;"><p style="text-align: center;"><span style="font-family: Didot, serif; font-size: 21px;">Hola</span></p>     <p style="text-align: center;"><iframe src="https://scontent.fuio13-1.fna.fbcdn.net/v/t1.6435-9/36846655_646067285785970_4797000834908946432_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=e3f864&_nc_ohc=5NSQ-MbkxA8AX_mNRze&_nc_ht=scontent.fuio13-1.fna&oh=9213d59245cbfce67f0d52f6fe638d47&oe=61B38BE1" embed width="240" height="290" frameborder="0" scrolling="no" allowtransparency="true"></iframe>     </div>`)[0];
+            popup_06413c6c724d4cd09fbfa9bb5b11b7cc.setContent(html_9f11e7d731b24d46a0220122b9ad78a2);
+        
+
+        circle_marker_bc3ceaa78d864ef2b59d3fa9299981ca.bindPopup(popup_06413c6c724d4cd09fbfa9bb5b11b7cc)
+        ;
+
+        
+    
+    
+            circle_marker_bc3ceaa78d864ef2b59d3fa9299981ca.bindTooltip(
+                `<div>
+                     Universidad de Cuenca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f7ca5883d15943d9ad5dbf8fa1dc2738_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f7ca5883d15943d9ad5dbf8fa1dc2738 = L.geoJson(null, {
+                onEachFeature: geo_json_f7ca5883d15943d9ad5dbf8fa1dc2738_onEachFeature,
+            
+        });
+
+        function geo_json_f7ca5883d15943d9ad5dbf8fa1dc2738_add (data) {
+            geo_json_f7ca5883d15943d9ad5dbf8fa1dc2738
+                .addData(data)
+                .addTo(map_a929a071325d479797d54ae1b9442dd4);
+        }
+            geo_json_f7ca5883d15943d9ad5dbf8fa1dc2738_add({"features": [{"geometry": {"coordinates": [[-78.99210959672928, -2.9099641869989643], [-78.99041712284088, -2.9091525253285173], [-78.98996382951736, -2.9096909544226737], [-78.98970633745193, -2.910049907009249], [-78.9897546172142, -2.9101409845130344], [-78.99071484804153, -2.9109847904481105], [-78.99140685796738, -2.9115767935999766], [-78.99159997701645, -2.91163572602341], [-78.99163484573364, -2.911625011037553], [-78.99203449487686, -2.9102990307521304], [-78.99210423231125, -2.909945435745847]], "type": "LineString"}, "properties": {}, "type": "Feature"}, {"geometry": {"coordinates": [[-79.01212692260742, -2.9004224376487002], [-79.01194989681244, -2.9000741970969486], [-79.01177823543549, -2.8997205988885333], [-79.0112954378128, -2.8995116544406874], [-79.01071071624756, -2.8990830503243497], [-79.0104854106903, -2.899029474798381], [-79.0100508928299, -2.8991794862646834], [-79.0083396434784, -2.900588521566384], [-79.00808215141296, -2.9009260468723257], [-79.00884926319122, -2.9018796892556744], [-79.01025474071503, -2.902276147088405], [-79.01043176651001, -2.90239401290375], [-79.01033520698547, -2.9025547389957556], [-79.00988459587097, -2.902881548645698], [-79.01046395301817, -2.903679820999738], [-79.01113986968994, -2.9031762130031327], [-79.01215374469757, -2.902329722460536], [-79.01191234588623, -2.901606454722452], [-79.0116548538208, -2.901081415630087], [-79.01162803173065, -2.9007760356376826], [-79.01195526123045, -2.900599236657008], [-79.01217520236969, -2.9004867282003715], [-79.0121353045106, -2.900430473967855]], "type": "LineString"}, "properties": {}, "type": "Feature"}, {"geometry": {"coordinates": [[-79.00690734386444, -2.891044014310516], [-79.00785684585571, -2.890786849938128], [-79.00802850723267, -2.8917619312082214], [-79.00703608989716, -2.892016416566616], [-79.00691002607346, -2.8910654446722415]], "type": "LineString"}, "properties": {}, "type": "Feature"}, {"features": [{"geometry": {"coordinates": [[-79.02615487575531, -2.9201567862207285], [-79.02625143527985, -2.9206469930005765], [-79.02504444122314, -2.920853254805747], [-79.02491301298141, -2.919915700840673], [-79.02603149414062, -2.9198540901241383], [-79.02614682912827, -2.9201353564112615]], "type": "LineString"}, "properties": {}, "type": "Feature"}], "type": "FeatureCollection"}, {"features": [{"geometry": {"coordinates": [[[-79.03742551803589, -2.8926646842741883], [-79.03485059738159, -2.8926646842741883], [-79.03485059738159, -2.8903287757554517], [-79.03742551803589, -2.8903287757554517], [-79.03742551803589, -2.8926646842741883]]], "type": "Polygon"}, "properties": {}, "type": "Feature"}], "type": "FeatureCollection"}], "type": "FeatureCollection"});
+
+        
+    
+            var tile_layer_cd7a6cc814fc43568014881e41dfb019 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a929a071325d479797d54ae1b9442dd4);
+        
+    
+            var tile_layer_353b49fb1d58498aad4fc380674aff9e = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a929a071325d479797d54ae1b9442dd4);
+        
+    
+            var tile_layer_aa5feacc45f149668d0af682201d0eb2 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a929a071325d479797d54ae1b9442dd4);
+        
+    
+            var tile_layer_34b44f8428b74984becf9d0961e012e5 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a929a071325d479797d54ae1b9442dd4);
+        
+    
+            var tile_layer_404fb80f81f14d549550175ad383e36b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a929a071325d479797d54ae1b9442dd4);
+        
+    
+            var layer_control_f2f97e98c6bb439a8f51d04868ebd2ec = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3c2c515f1a8c4333bd2c8bf14b45a031,
+                    "stamenterrain" : tile_layer_cd7a6cc814fc43568014881e41dfb019,
+                    "stamentoner" : tile_layer_353b49fb1d58498aad4fc380674aff9e,
+                    "stamenwatercolor" : tile_layer_aa5feacc45f149668d0af682201d0eb2,
+                    "cartodbpositron" : tile_layer_34b44f8428b74984becf9d0961e012e5,
+                    "cartodbdark_matter" : tile_layer_404fb80f81f14d549550175ad383e36b,
+                },
+                overlays :  {
+                    "macro_element_e7bdec3419bd4945b5e79de3fa067088" : marker_cluster_e7bdec3419bd4945b5e79de3fa067088,
+                    "macro_element_f7ca5883d15943d9ad5dbf8fa1dc2738" : geo_json_f7ca5883d15943d9ad5dbf8fa1dc2738,
+                },
+            };
+            L.control.layers(
+                layer_control_f2f97e98c6bb439a8f51d04868ebd2ec.base_layers,
+                layer_control_f2f97e98c6bb439a8f51d04868ebd2ec.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a929a071325d479797d54ae1b9442dd4);
+            tile_layer_cd7a6cc814fc43568014881e41dfb019.remove();
+            tile_layer_353b49fb1d58498aad4fc380674aff9e.remove();
+            tile_layer_aa5feacc45f149668d0af682201d0eb2.remove();
+            tile_layer_34b44f8428b74984becf9d0961e012e5.remove();
+            tile_layer_404fb80f81f14d549550175ad383e36b.remove();
+            tile_layer_3c2c515f1a8c4333bd2c8bf14b45a031.remove();
+        
+</script>
